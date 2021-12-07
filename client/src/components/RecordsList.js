@@ -8,7 +8,6 @@ const RecordsList = (props) => {
 
     useEffect(() => {
         getRecords().then(result => {
-            console.log(result);
             setData(result.records);
         })
     },[])
